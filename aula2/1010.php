@@ -2,11 +2,11 @@
     $linha1 = readline();
     $linha2 = readline();
 
-    $val1 = explode('',$linha1);
+    $val1 = explode(' ',$linha1);
     $qtd1 = intval($val1[1]);
     $vlr1 = floatval($val1[2]);
 
-    $val2 = explode('',$linha2);
+    $val2 = explode(' ',$linha2);
     $qtd2 = intval($val2[1]);
     $vlr2 = floatval($val2[2]);
 
