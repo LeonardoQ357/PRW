@@ -1,7 +1,7 @@
 <?php
     $l1 = readline();
 
-    $val1 = explode(' ', $l1);
+    $val1 = explode(' ',$l1);
     $a = intval($val1[0]);
     $b = intval($val1[1]);
     $c = intval($val1[2]);
