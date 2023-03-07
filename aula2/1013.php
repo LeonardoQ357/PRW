@@ -6,8 +6,8 @@
     $b = intval($val1[1]);
     $c = intval($val1[2]);
 
-    $mab = ($a+$b+$a*$b($a-$b))/2;
-    $mabc = ($mab+$c+$mab*$c($mab-$c))/2;
+    $mab = ($a+$b+abs($a-$b))/2;
+    $mabc = ($mab+$c+abs($mab-$c))/2;
 
     echo "$mabc eh o maior\n";
 ?>
