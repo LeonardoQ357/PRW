@@ -13,6 +13,8 @@
         echo "Perimetro = $p\n";
     }else{
         $area = (($a+$b)*$c) / 2;
-        $area = number_format($area, 1, ".", ""); 
+        $area = number_format($area, 1, ".", "");
+        
+        echo "Area = $area\n";
     }
 ?>
