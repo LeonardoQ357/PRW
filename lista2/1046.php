@@ -7,7 +7,7 @@
 
 
 
-    if($hi == $hf && $hf == $hi ){
+    if($hi == $hf){
         echo "O JOGO DUROU 24 HORA(S)\n";
     }
 

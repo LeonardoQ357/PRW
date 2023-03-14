@@ -9,26 +9,22 @@
 
 
 
-    if($hi == $hf && $hf == $hi ){
-        echo "O JOGO DUROU 24 HORA(S)\n";
-    }
+    if($hi == $hf && $mi == $mf){
+        $h = 24;
+        $m = 0;
 
-    if($hf < $hi && $hf > 12){
-        $hi = $hi + 24;
+    }else if($hi == $hf && $mi != $mf){
+        if($mf < $mi){
+            $mf += 60;
 
-        $h = $hi -$hf;
+            $m = $mf - $mi;
+        }else{
+            $m = $mf - $mi;
+        }
 
-        echo "O JOGO DUROU $h HORA(S)\n";
-    }else if($hf < $hi && $hf <= 12){
-        $hf = $hf + 24;
+        $h = 0;
+    }else if()
 
-        $h = $hf - $hi;
-
-        echo "O JOGO DUROU $h HORA(S)\n";
-    }else if($hf > $hi){
-        $h = $hf - $hi;
-
-        echo "O JOGO DUROU $h HORA(S)\n";
-    }
+    echo "O JOGO DUROU $h HORA(S) E $m MINUTO(S)\n";
 
 ?>
