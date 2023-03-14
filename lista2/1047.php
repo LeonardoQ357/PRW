@@ -7,24 +7,28 @@
     $hf = intval($val[2]);
     $mf = intval($val[3]);
 
+    $h = $hf - $hi;
+    $m = $mf - $mi;
 
+    if($h < 0){
+        $h = 24 + ($hf - $hi);
+    }
+
+    if($m < 0){
+        $m = 60 + ($mf - $mi);
+
+    }
+
+    if($mf < $mi && $hf > $hi){
+        $h = $h - 1;
+    }else if($mf < $mi && $hf < $hi){
+        $h
+    }
 
     if($hi == $hf && $mi == $mf){
-        $h = 24;
-        $m = 0;
-
-    }else if($hi == $hf && $mi != $mf){
-        if($mf < $mi){
-            $mf += 60;
-
-            $m = $mf - $mi;
-        }else{
-            $m = $mf - $mi;
-        }
-
-        $h = 0;
-    }else if()
-
-    echo "O JOGO DUROU $h HORA(S) E $m MINUTO(S)\n";
+        echo "O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)\n";
+    }else{
+        echo "O JOGO DUROU $h HORA(S) E $m MINUTO(S)\n";
+    }
 
 ?>
