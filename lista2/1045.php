@@ -15,28 +15,57 @@
 
                 $a = $n3;
             } else{
-                echo "$c\n";
-                echo "$b\n";
+                $b = $n3;
+                $a = $n2;
             }
         }else{
+
             $c = $n3;
-            echo "$a\n";
-            echo "$b\n";
+            $a = $n2;
+            $b = $n1;
         } 
 
     }else if($n2 < $n3){
-        echo "$b\n";
+        $c = $n2;
         if($n1 < $n3){
-            echo "$a\n";
-            echo "$c\n";
+            $a = $n3;
+            $b = $n1;
         }else{
-            echo "$c\n";
-            echo "$a\n";
+            $b = $n3;
+            $a = $n1;
         }
     }else if($n3 < $n1){
-        echo "$c\n";
-        echo "$b\n";
-        echo "$a\n";
+        $a = $n2;
+        $b = $n1;
+        $c = $n3;
+    }else if($n1 == $n2 && $n3 > $n1){
+        $a = $n3;
+        $b = $n2;
+        $c = $n3;
+    }else if($n1 == $n3 && $n2 > $n1){
+        $a = $n2;
+        $b = $n1;
+        $c = $n3;
+    }else if($n2 == $n3 && $n1 > $n2){
+        $a = $n1;
+        $b = $n2;
+        $c = $n3;
+    }else if($n1 == $n2 && $n3 < $n1){
+        $a = $n1;
+        $b = $n2;
+        $c = $n3;
+    }else if($n1 == $n3 && $n2 < $n1){
+        $a = $n1;
+        $b = $n2;
+        $c = $n2;
+    }else if($n2 == $n3 && $n1 < $n2){
+        $a = $n3;
+        $b = $n2;
+        $c = $n1;
+    }else if($n1 == $n2 && $n2 == $n3){
+        $a = $n1;
+        $b = $n2;
+        $c = $n3;
     }
 
     $qa = $a * $a;
