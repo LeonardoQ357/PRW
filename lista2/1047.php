@@ -22,7 +22,7 @@
     if($mf < $mi && $hf > $hi){
         $h = $h - 1;
     }else if($mf < $mi && $hf < $hi){
-        $h
+        $h = $h + 1;
     }
 
     if($hi == $hf && $mi == $mf){
