@@ -9,9 +9,9 @@
 
     //Utilizar explode para separar as palavra utilizando <ESPAÇO>
     $str = "IFSP Campus Birigui";
-    $i = explode(' ',$str);
-    
-    echo $i[0]."<br>";
-    echo $i[1]."<br>";
-    echo $i[2]."<br>";
+    $s = explode(' ',$str);
+
+    for($i=0; $i< count($s); $i++){
+        echo $s[$i]."<br>";
+    }
 ?>
