@@ -1,13 +1,17 @@
 <?php
     $x = readline();
+    $z = readline();
 
-    do{
+    while($x > $z){
         $z = readline();
-    }while($x > $z);
+    }
     
-    for($c=1;$x <= $z;$c++){
-        $x += ($x+$i);
+    $i = 1;
+
+    for($c=0;$x <= $z;$c++){
+        $r += $x+$c;
+        $i ++;
     }
 
-    echo "$c\n";
+    echo "$i\n";
 ?>
