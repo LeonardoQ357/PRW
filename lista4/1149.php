@@ -1,13 +1,18 @@
 <?php
-    $l1 = read();
-
+    $l1 = readline();
+    
     $val = explode(' ', $l1);
 
-    $N = 
+    $a = $val[0];
 
-    do{
+    for($i=1;$n <= 0;$i++){
+        $n = $val[$i];
+    }
 
-    }while($val[1] <= 0)
+    for($i=0;$i <= $n-1; $i++){
+    $x += $a + $i;
+    }
 
+    echo "$x\n";
 
 ?>
