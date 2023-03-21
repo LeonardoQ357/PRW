@@ -3,12 +3,15 @@
 
     do{
         $z = readline();
-    }while($z < $x)
+    }while($z < $x);
 
     $c = 1;
 
     for($i=0;$r <= $z;$i++){
         $r = $x + ($x+$i);
 
+        $c += 1;
     }
+
+    echo "$c";
 ?>
