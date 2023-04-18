@@ -10,9 +10,19 @@
     <!-- form 
         action="Arquivo .php que será chamado pelo form" 
         method="Tipo de requisição http GET(envia pelo link) ou POST(envia por n lembro onde)" -->
+    <h1>Cadastro de Alunos</h1>
     <form action="form.php" method="get">
+        <div>
         <label for="nome">Nome</label>
-        <input type="text" name="nome">
+        <input type="text" name="nome" placeholder="Digite o nome">
+        </div>
+        <div>
+            <label for="idade">Idade</label>
+            <input type="number" name="idade" placeholder="Digite a idade">
+        </div>
+        <div>
+        <button type="submit">Enviar</button>
+        </div>
     </form>
 </body>
 </html>
